@@ -7,5 +7,5 @@ import {Book} from "./book.interface";
   styleUrls: ['../app.component.css'],
 })
 export class BookListComponent {
-  @Input() books: Book[] = [];
+  @Input() books: Book[];
 }

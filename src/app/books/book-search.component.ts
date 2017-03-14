@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { BooksService } from "./books.service";
+import {BooksEventService} from "./books.events";
 
 @Component({
   selector: 'book-search',
@@ -8,7 +10,10 @@ import { Component } from '@angular/core';
 export class BookSearchComponent {
   searchTerm: string;
 
+  constructor(private bookEvents: BooksEventService) {
+  }
+
   update(searchTerm: string) {
-    this.searchTerm = searchTerm;
+    this.bookEvents.searchBooks(searchTerm);
   }
 }
