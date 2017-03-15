@@ -19,9 +19,9 @@ export class DebounceDirective {
       .debounceTime(this.debounceTime)
       .distinctUntilChanged()
       .subscribe(modelValue => {
-        if (modelValue) {
+        // if (modelValue) {
           this.onDebounce.emit(modelValue);
-        }
+        // }
       });
   }
 }
