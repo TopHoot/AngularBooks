@@ -5,19 +5,15 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { BooksComponent } from './books/books.component';
-import { BookSearchComponent } from './books/book-search.component';
 import { BookListComponent } from './books/book-list.component';
 import { CommaSeparatedPipe } from './comma-separated.pipe'
-import { DebounceDirective } from "./debounce.directive";
 
 @NgModule({
   declarations: [
     AppComponent,
     BooksComponent,
-    BookSearchComponent,
     BookListComponent,
-    CommaSeparatedPipe,
-    DebounceDirective
+    CommaSeparatedPipe
   ],
   imports: [
     BrowserModule,

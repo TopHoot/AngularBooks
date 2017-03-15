@@ -1,7 +1,7 @@
 <div *ngFor="let book of books">
   <md-card class="book-card">
     <md-card-title-group>
-      <img *ngIf="book.volumeInfo.imageLinks" md-card-sm-image src={{book.volumeInfo.imageLinks.thumbnail>
+      <img *ngIf="book.volumeInfo.imageLinks" src={{book.volumeInfo.imageLinks.thumbnail md-card-sm-image >
       <md-card-title>{{book.volumeInfo.title}}</md-card-title>
       <md-card-subtitle>{{book.volumeInfo.authors | commaSeparated}}</md-card-subtitle>
     </md-card-title-group>
