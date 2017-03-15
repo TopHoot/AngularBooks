@@ -1,18 +1,18 @@
 export interface Book {
-  kind: string;
-  id: string;
-  etag: string;
-  description: string;
-  volumeInfo: Volume;
+  kind?: string;
+  id?: string;
+  etag?: string;
+  volumeInfo?: Volume;
 }
 
 export interface Volume {
-  title: string;
-  authors: string[];
-  imageLinks: ImageLinks;
+  title?: string;
+  authors?: string[];
+  imageLinks?: ImageLinks;
+  description?: string;
 }
 
 export interface ImageLinks {
-  smallThumbnail: string;
-  thumbnail: string;
+  smallThumbnail?: string;
+  thumbnail?: string;
 }

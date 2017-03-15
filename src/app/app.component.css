@@ -1,4 +1,19 @@
+.books-container {
+  width: 50%;
+  align-self: center;
+  margin: auto;
+}
+
+.root-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
 .book-card {
   margin-top: 5px;
-  width: 400px;
+}
+
+body {
+  background-color: #607D8B;
 }

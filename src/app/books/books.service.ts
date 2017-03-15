@@ -7,13 +7,13 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class BooksService {
-  private googleBooksAPI = 'https://www.googleapis.com/books/v1/volumes';
+  private googleBooksAPI = 'https://www.googleapis.com/books/v1/';
 
   constructor (private http: Http) {
   }
 
   searchBooks(searchTerm: string): Observable<Book[]> {
-    return this.http.get(this.googleBooksAPI + "?q=" + searchTerm)
+    return this.http.get(this.googleBooksAPI + "volumes?q=" + searchTerm)
       .map(this.extractData)
       .catch(this.handleError);
   }
